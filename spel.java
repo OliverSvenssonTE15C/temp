@@ -96,7 +96,7 @@ public class spel extends Application {
 	private void readInstruction(String line) {
 		int index = line.indexOf(')');
 		String action = line.substring(1, index);
-		System.out.println(action);
+		//System.out.println(action);
 
 		if (action.equals("NEW PLAYER")) {
 			spawnNewLocalPlayer(line.substring(index + 2, line.length() - 1));
